@@ -62,7 +62,7 @@ public class App {
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
-<<<<<<< HEAD
+
         get("/squad/:id", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             int idOfSquadToFind = Integer.parseInt(req.params(":id"));
@@ -71,7 +71,7 @@ public class App {
             return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
 
-=======
+
        get("/squad/:id", (req, res) -> {
            Map<String, Object> model = new HashMap<>();
            int idOfSquadToFind = Integer.parseInt(req.params(":id"));
@@ -80,7 +80,7 @@ public class App {
            return new ModelAndView(model, "squad.hbs");
        }, new HandlebarsTemplateEngine());
        
->>>>>>> d2c760434bab8debacea77a0513a2b06a4463c32
+
 
     }
 }
