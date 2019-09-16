@@ -23,7 +23,7 @@ public class Squad {
         return sName;
     }
 
-//    public Integer getAge() {
+//    public Integer getSize() {
 //        return sSize;
 //    }
 
@@ -38,10 +38,10 @@ public class Squad {
         return instances.get(id-1);
     }
 
-    public static List<Squad> all() {
+    public static ArrayList<Squad> all() {
         return instances;
     }
-    public static void clear(){
-        instances.clear();
-    }
+//    public static void clear(){
+//        instances.clear();
+//    }
 }

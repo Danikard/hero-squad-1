@@ -3,23 +3,19 @@
 {{/partial}}
 
 {{#partial "content"}}
-    <div class="card" id="fofo">
-        <form action="/heroes/new" method="post">
+    <div class=" jambotron text-center" id="fofo">
+        <form action="/heroes/new" method="post" class="well">
             <div class="form-group">
-                <label for="formGroupExampleInput">Hero name</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="hero name" name="name">
+                <label for="formGroupExampleInput">Hero name</label><br>
+                <input type="text"  placeholder="hero name" name="name">
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput2">Hero age</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="hero age" name="age">
+                <label for="formGroupExampleInput2">Hero strength</label><br>
+                <input type="text"  placeholder="Hero strength"name="strength">
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput2">Hero strength</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Hero strength"name="strength">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Hero weaknesses</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Hero weaknesses"name="weakness">
+                <label for="formGroupExampleInput2">Hero weaknesses</label><br>
+                <input type="text"  placeholder="Hero weaknesses"name="weakness">
             </div>
             <div class="col-auto">
                 <button type="submit" class="btn btn-primary mb-2">Submit</button>

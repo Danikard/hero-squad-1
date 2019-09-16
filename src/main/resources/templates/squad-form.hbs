@@ -1,24 +1,19 @@
 {{#partial "content"}}
-    <div class="card" id="fofo">
-        <div class="card-body">
-            <form action="/squads/new" method="post">
+    <div class="jambotron text-center" id="fofo">
+
+            <form action="/squads/new" method="post" class="well">
                 <div class="form-group">
-                    <label for="formGroupExampleInput">Name of the squad</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name of the squad" name="squad">
+                    <label for="formGroupExampleInput">Name of the squad</label><br>
+                    <input type="text"  id="formGroupExampleInput" placeholder="Name of the squad" name="name">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2">Cause</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="cause" name="cause">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput2">Maximum size</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="maximum size">
+                    <label for="formGroupExampleInput2">Cause</label><br>
+                    <input type="text"  id="formGroupExampleInput2" placeholder="cause" name="cause">
                 </div>
                 <div class="col-auto">
                     <button type="submit" class="btn btn-primary mb-2">Submit</button>
                 </div>
             </form>
-        </div>
         </div>
 {{/partial}}
 {{> layout.hbs}}

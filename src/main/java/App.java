@@ -15,7 +15,7 @@ public class App {
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             ArrayList<Hero> heroes = Hero.all();
-            List<Squad> squads =Squad.all();
+            ArrayList<Squad> squads =Squad.all();
             model.put("heroes", heroes);
             model.put("squads",squads);
             return new ModelAndView(model, "index.hbs");
@@ -56,7 +56,7 @@ public class App {
         post("squads/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             String name = request.queryParams("name");
-//            Integer size = Integer.parseInt(request.params("size"));
+//            int size = Integer.parseInt(request.params("size"));
             String cause = request.queryParams("cause");
             Squad newPost = new Squad(name,cause);
             return new ModelAndView(model, "success.hbs");
@@ -64,7 +64,6 @@ public class App {
 
         get("/squad/:id", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-//            List<Hero> hero = Hero.all();
             int idOfSquadToFind = Integer.parseInt(req.params(":id"));
             Squad foundHero = Squad.findById(idOfSquadToFind);
             model.put("squad", foundHero);

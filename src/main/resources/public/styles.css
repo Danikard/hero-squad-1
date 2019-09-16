@@ -2,3 +2,15 @@ body{
 background-image:url("images/logan.jpg");
 background-size:cover;
 }
+p{
+color:white;
+}
+.para{
+padding-right:30px;
+}
+.well{
+background-color:white;
+}
+a{
+color:white;
+}
