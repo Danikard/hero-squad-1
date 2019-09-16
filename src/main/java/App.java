@@ -62,26 +62,14 @@ public class App {
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
-//        get("/squad/:id", (req, res) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            int idOfSquadToFind = Integer.parseInt(req.params(":id"));
-//            Squad foundHero = Squad.findById(idOfSquadToFind);
-//            model.put("squad", foundHero);
-//            return new ModelAndView(model, "squad.hbs");
-//        }, new HandlebarsTemplateEngine());
-//        get("/squad/:id/delete", (req, res) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            int idOfPostToDelete = Integer.parseInt(req.params(":id"));
-//            Hero deletePost = Hero.findById(idOfPostToDelete);
-//            deletePost.deletePost();
-//            return new ModelAndView(model, "success.hbs");
-//        }, new HandlebarsTemplateEngine());
-//
-//        get("/squad/delete", (req, res) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            Hero.clearAllPosts();
-//            return new ModelAndView(model, "success.hbs");
-//        }, new HandlebarsTemplateEngine());
+        get("/squad/:id", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            int idOfSquadToFind = Integer.parseInt(req.params(":id"));
+            Squad foundHero = Squad.findById(idOfSquadToFind);
+            model.put("squad", foundHero);
+            return new ModelAndView(model, "squad.hbs");
+        }, new HandlebarsTemplateEngine());
+
 
     }
 }
