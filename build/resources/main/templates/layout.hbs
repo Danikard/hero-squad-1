@@ -1,0 +1,43 @@
+{{#block "Header"}}
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{{#block "title"}}Heros{{/block}}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles.css">
+
+    </head>
+{{/block}}
+<body>
+<div class="container-fluid">
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="/heroes/new">Add a New hero</a></li>
+    <li role="presentation"><a href="/squads/new">Add a New squad</a></li>
+</ul>
+<!--begin main template-->
+<div class="page">
+    <div class="page-header">
+        <h1>Welcome to HERO squad</h1>
+    </div>
+    {{#block "content"}}
+    {{/block}}
+
+</div>
+    <p class="text-muted"><a href="/posts/delete">Delete squad</a></p>
+<!--end main template-->
+{{#block "footer"}}
+    <footer class="footer">
+        <p><img src="https://img.icons8.com/ios/16/000000/copyright.png">2019 by Karambizi Amandine Gloria.</p>
+        <a href="https://web.facebook.com/gloria.karambizi"><img src="https://img.icons8.com/material-rounded/24/000000/facebook.png"></a>
+        <a href="https://www.instagram.com/k_ag_24/"><img src="https://img.icons8.com/ios-glyphs/24/000000/instagram-new.png"></a>
+
+    </footer>
+    </div>
+    </body>
+    </html>
+{{/block}}
