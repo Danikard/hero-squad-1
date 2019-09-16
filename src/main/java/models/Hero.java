@@ -22,6 +22,8 @@ public class Hero {
     }
 
 
+
+
     public String getName(){
         return hName;
     }
@@ -53,4 +55,6 @@ public class Hero {
     public static void clear(){
         instances.clear();
     }
+
+
 }
