@@ -56,12 +56,13 @@ public class App {
         post("squads/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             String name = request.queryParams("name");
-//            int size = Integer.parseInt(request.params("size"));
+//         int size = Integer.parseInt(request.params("size"));
             String cause = request.queryParams("cause");
             Squad newPost = new Squad(name,cause);
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
+<<<<<<< HEAD
         get("/squad/:id", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             int idOfSquadToFind = Integer.parseInt(req.params(":id"));
@@ -70,6 +71,16 @@ public class App {
             return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
 
+=======
+       get("/squad/:id", (req, res) -> {
+           Map<String, Object> model = new HashMap<>();
+           int idOfSquadToFind = Integer.parseInt(req.params(":id"));
+           Squad foundHero = Squad.findById(idOfSquadToFind);
+           model.put("squad", foundHero);
+           return new ModelAndView(model, "squad.hbs");
+       }, new HandlebarsTemplateEngine());
+       
+>>>>>>> d2c760434bab8debacea77a0513a2b06a4463c32
 
     }
 }
