@@ -11,3 +11,12 @@ bin
 *.iws
 reports
 .java-version
+.gradle
+/build/
+.classpath
+.project
+.settings/
+.vscode/
+bin/
+
+!gradle-wrapper.jar
