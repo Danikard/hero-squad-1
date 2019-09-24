@@ -5,14 +5,14 @@ bin
 .project
 .classpath
 .pdm
-/.idea/
+.idea/
 *.iml
 *.ipr
 *.iws
 reports
 .java-version
-/.gradle/
-/build/
+.gradle/
+build/
 .classpath
 .project
 .settings/
